@@ -1,0 +1,16 @@
+header {
+  height: 5vh;
+  min-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  a {
+    text-decoration: none;
+
+    &.active {
+      text-decoration: underline solid 3px;
+      text-underline-offset: 3px;
+    }
+  }
+}

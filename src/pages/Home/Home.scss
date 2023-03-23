@@ -1,0 +1,53 @@
+@use "../../scss/colors" as *;
+
+@mixin orange-text {
+  color: $tigers-eye;
+  animation: 2s infinite pulsate ease;
+}
+
+.menu {
+  height: 95vh;
+  width: 100vw;
+
+  h2 {
+    text-align: center;
+    @include orange-text;
+  }
+
+  .instructions {
+    height: 30%;
+    display: flex;
+    place-content: center;
+
+    ol {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: space-evenly;
+    }
+  }
+
+  .buttons {
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 800px;
+    margin: 0 auto;
+
+    button {
+      font-size: 2rem;
+      padding: 0.5rem;
+      @include orange-text;
+    }
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    color: $tigers-eye;
+  }
+  50% {
+    color: lighten($color: $tigers-eye, $amount: 15);
+  }
+}
