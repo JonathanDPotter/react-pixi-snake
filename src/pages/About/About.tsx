@@ -11,7 +11,9 @@ const About = () => {
         </a>
         converted to use pixi.js and react.js. It is a bery simple example of
         using pixi.js in React, but I have learned a lot about using these two
-        together during the process of making this game.
+        together during the process of making this game. The repository for this
+        app can be found on GitHub{" "}
+        <a href="https://github.com/JonathanDPotter/react-pixi-snake">here</a>.
       </p>
       <br />
       <h3>Technologies used</h3>
